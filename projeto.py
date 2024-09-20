@@ -4,6 +4,9 @@ numero_dias=[]
 cliente_frequente=[]
 valor_orcamento=[]
 media_alugueis=0
+
+media_clientesfreq=0
+
 while True:
 
     #MENU
@@ -61,8 +64,19 @@ Escolha:""")))
             media_alugueis=sum(valor_orcamento)/contador_aluguel
         print(f"A media do valor de todos os alugueis é: {media_alugueis}")
     #A média dos aluguéis para clientes frequentes
-
-
+        soma_clientesfreq=0
+        cont_clientesfreq=0
+        for i in range(contador_aluguel):
+            if cliente_frequente[i]==1:
+                soma_clientesfreq+=valor_orcamento[i]
+                cont_clientesfreq+=1
+        if cont_clientesfreq>0:
+            media_clientesfreq=soma_clientesfreq/cont_clientesfreq
+            print(f"soma clientes frequentes {soma_clientesfreq}")
+            print(f"Media clientes frequentes: {media_clientesfreq}")
+        else:
+            print("Não há clientes frequentes")
+    #O numero do aluguel com maior valor
 
 #CONFERENCIA
 print(f""" 
