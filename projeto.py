@@ -4,9 +4,8 @@ numero_dias=[]
 cliente_frequente=[]
 valor_orcamento=[]
 media_alugueis=0
-
 media_clientesfreq=0
-
+maior_valor=0
 while True:
 
     #MENU
@@ -77,6 +76,13 @@ Escolha:""")))
         else:
             print("Não há clientes frequentes")
     #O numero do aluguel com maior valor
+        for i in range(contador_aluguel):
+            if contador_aluguel==1:
+                maior_valor=i
+            elif valor_orcamento[-1]>maior_valor:
+                maior_valor=i
+        print(f"O numero do aluguel com maior valor é {maior_valor}")
+
 
 #CONFERENCIA
 print(f""" 
