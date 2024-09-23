@@ -37,6 +37,8 @@ int main(){
         //menu
         printf("\n[0]SAIR\n[1]INSERIR MAIS REGISTROS\n[2]APRESENTAR RESULTADOS\n[3]ORDENAR OS REGISTROS PELO VALOR TOTAL DO ALUGUEL(DECRESCENTE)\n[4]IMPRIMIR REGISTRO DE ALUGUEIS\nDIGITE UMA OPÇÃO: ");
         scanf("%d",&opc);
+        printf("---------------------------------------------------------");
+
 
 
         //verificação
@@ -114,7 +116,7 @@ int main(){
                 soma_aluguel += valor_orcamento[i];
             }
             media_alugueis = soma_aluguel/contador_aluguel;
-            printf("\nA MEDIA DO VALOR DE TODOS OS ALUGUEIS É: %.2f\n",media_alugueis);
+            printf("A MEDIA DO VALOR DE TODOS OS ALUGUEIS É: %.2f\n",media_alugueis);
 
 
             //média dos aluguéis para clientes frequentes;
@@ -126,7 +128,7 @@ int main(){
             }
             if (cont_clientesfreq > 0){
                 media_clientesfreq = soma_clientesfreq/cont_clientesfreq;
-                printf("\nMEDIA CLIENTES FREQUENTES: %.2f\n\n", media_clientesfreq);
+                printf("MEDIA CLIENTES FREQUENTES: %.2f\n\n", media_clientesfreq);
                 }
             else{
                 printf("\nNÃO HÁ CLIENTES FREQUENTES!\n\n");
@@ -156,8 +158,8 @@ int main(){
             for(i=1; i<=contador_aluguel; i++){
                 soma_dias += numero_dias[i];
             }
-            printf("TOTAL DE DIAS ALUGADOS: %d\n\n",soma_dias);
-
+            printf("TOTAL DE DIAS ALUGADOS: %d\n",soma_dias);
+            printf("---------------------------------------------------------------\n");
             while(1){
                 printf("DIGITE [1] PARA VOLTAR AO MENU PRINCIPAL: ");
                 scanf("%d",&opc2);
@@ -166,7 +168,7 @@ int main(){
                     break;
                 }
             }
-        
+
         } //fim da opc 2;
 
 
