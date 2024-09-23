@@ -114,7 +114,7 @@ int main(){
                 soma_aluguel += valor_orcamento[i];
             }
             media_alugueis = soma_aluguel/contador_aluguel;
-            printf("A MEDIA DO VALOR DE TODOS OS ALUGUEIS É: %.2f\n",media_alugueis);
+            printf("\nA MEDIA DO VALOR DE TODOS OS ALUGUEIS É: %.2f\n",media_alugueis);
 
 
             //média dos aluguéis para clientes frequentes;
@@ -126,7 +126,7 @@ int main(){
             }
             if (cont_clientesfreq > 0){
                 media_clientesfreq = soma_clientesfreq/cont_clientesfreq;
-                printf("MEDIA CLIENTES FREQUENTES: %.2f\n\n", media_clientesfreq);
+                printf("\nMEDIA CLIENTES FREQUENTES: %.2f\n\n", media_clientesfreq);
                 }
             else{
                 printf("\nNÃO HÁ CLIENTES FREQUENTES!\n\n");
@@ -166,7 +166,7 @@ int main(){
                     break;
                 }
             }
-
+        
         } //fim da opc 2;
 
 
